@@ -1,5 +1,5 @@
 import displaySearchedRecipies from "./src/pages/displaySearchedRecipies.js";
-import surpriseWithRecipe from "./src/pages/surpriseRecipe.js";
+import surpriseWithRecipe from "./src/pages/surpriseMeRecipe.js";
 import topFiveRecipe from "./src/pages/topFiveRecipe.js";
 import {
   createElementById,
@@ -38,7 +38,7 @@ const main = () => {
   main.appendChild(navBar);
   main.appendChild(container);
   container.appendChild(wrapperContainer);
-  container.appendChild(superiseRecipe);
+  container.appendChild(surpriseRecipe);
   form.appendChild(inputField);
   form.appendChild(searchButton);
   wrapperContainer.appendChild(form);

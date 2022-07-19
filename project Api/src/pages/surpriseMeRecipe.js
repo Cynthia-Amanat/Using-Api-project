@@ -1,5 +1,6 @@
-import fetchData from "./src/utilities/fetch.js";
-import mealInstructions from "./src/pages/mealInstructions.js";
+import fetchData from "../utilities/fetch.js";
+import renderError from "../../renderError.js";
+import mealInstructions from "./mealInstructions.js";
 
 async function surpriseWithRecipe() {
   try {
@@ -8,7 +9,7 @@ async function surpriseWithRecipe() {
     );
     mealInstructions(response.meals[0]);
   } catch (error) {
-    console.log(error.message);
+    renderError(error.message);
   }
 }
 export default surpriseWithRecipe;

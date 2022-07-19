@@ -1,5 +1,6 @@
 import createRecipieCard from "./createRecipieCard.js";
 import fetchData from "../utilities/fetch.js";
+import renderError from "../../renderError.js";
 
 const getMealAndCreateCard = async (value, recipieContainer) => {
   try {
@@ -12,7 +13,7 @@ const getMealAndCreateCard = async (value, recipieContainer) => {
       recipieContainer.innerHTML = `<h4>" Sorry we didn't found any meal !"<h4>`;
     }
   } catch (error) {
-    console.log(error.message);
+    renderError(error.message);
   }
 };
 

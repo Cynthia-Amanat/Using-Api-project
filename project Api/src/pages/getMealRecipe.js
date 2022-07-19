@@ -7,7 +7,7 @@ async function getMealRecipe(e) {
     );
     mealInstructions(response.meals[0]);
   } catch (error) {
-    console.log(error.message);
+    renderError(error.message);
   }
 }
 
