@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+
+a {
+  text-decoration: none;
+}
 #nav-bar {
   width: 90%;
   height: 10%;
@@ -22,7 +26,7 @@
 #nav-bar h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(255, 0, 0, 0.63);
-  font-size: 6vw;
+  font-size: 3.5vw;
   text-align: center;
 }
 
@@ -56,13 +60,13 @@
   background-color: #f1f2f2;
   background: url(./assest/01-Tomatoes.webp);
   background-size: cover;
-  min-height: 750px;
+  min-height: 450px;
   overflow: hidden;
 }
 #container h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 #search-items {
   display: flex;
@@ -71,7 +75,7 @@
 }
 .style-input {
   width: 900px;
-  height: 100px;
+  height: 70px;
   background-color: #f1f2f2;
   border: none;
   opacity: 0.8;
@@ -81,7 +85,7 @@
 }
 
 .style-button {
-  height: 100px;
+  height:70px;
   opacity: 0.8;
   width: 50px;
   border: none;
@@ -102,14 +106,20 @@ button:hover {
 
 #surprise-meal {
   position: absolute;
-  left: 38%;
-  font-size: 35px;
+  left: 40%;
+  font-size: 1.5rem;
   font-weight: bolder;
   margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: solid black 2px;
+  background-color: rgba(128, 128, 128, 0.66);
+  border-radius: 50px;
+  color: white;
 }
 #surprise-meal:hover {
   text-decoration: underline;
-  color: #f1f1f1;
+  
 }
 
 #recipie {
@@ -142,12 +152,13 @@ button:hover {
 
 /* styling cards */
 .recipe-card {
-  width: 400px;
-  height: 500px;
-  margin: 25px;
+  width: 22.5%;
+  height: auto;
+  margin: 25px 0px;
   background-color: #f1f2f2;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 .recipe-card:hover {
   box-shadow: 0px 2px 15px #4d4d4d;
@@ -157,8 +168,7 @@ img {
   border-radius: 10px;
   max-width: 100%;
   max-height: 100%;
-  height: 350px;
-  width: 400px;
+ 
 }
 h3 {
   font-size: 25px;
@@ -173,6 +183,7 @@ h3 span {
   justify-content: space-between;
   padding-right: 10px;
   height: 40px;
+  align-items: center;
 }
 
 #get-recipie {
@@ -194,10 +205,9 @@ li a {
 }
 p {
   color: rgba(255, 0, 0);
-  font-size: 20px;
+  font-size: 1rem;
   text-align: justify;
   position: relative;
-  bottom: 17px;
   z-index: 0;
 }
 /* meal details */
@@ -345,8 +355,8 @@ p {
   height: auto;
   border-radius: 50%;
 }
-
 #recipe-card {
+  width:20%;
   cursor: pointer;
 }
 
