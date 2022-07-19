@@ -12,4 +12,4 @@ When a user clicks on recipe of the day button user should be able to see full r
 A user can see top five recipes of the day and recipes will change every day<br>
 A user can see alphabet letters on the home page<br>
 A user can select the recipe by alphabet letters and see the result<br>(unable to do complete due to time limit)
-![image](https://user-images.githubusercontent.com/103147992/179851455-1238b71d-d135-4e72-a8d4-24b6d7876c70.png)
+![image](https://user-images.githubusercontent.com/103147992/179864194-31a674c9-02a1-4b9c-b912-b03c79ad73f4.png)
