@@ -42,7 +42,7 @@ a {
 }
 
 #navbar-search input {
-  width: 450px;
+  width: 100%;
   height: 70px;
   border: none;
   border-bottom: 2px solid gray;
@@ -135,7 +135,7 @@ button:hover {
   margin: 10px auto;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 950px;
+  max-height: 640px;
   gap: 10px;
 }
 #recipie-Container h4 {

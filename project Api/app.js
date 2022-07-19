@@ -21,7 +21,7 @@ const main = () => {
   // addting attributes and text to elements
 
   navBar.innerHTML = ` <div id ="bars-menu"><i class="fa fa-bars"></i></div>
-  <a href="./index.html"><h3>The Food corner</h3><a/>
+<a href="./index.html"><h3>The Food corner</h3></a>
   <div id="navbar-search" class="hide"><input type="text" placeholder="search recipe...." id="navbar-search-field"/> </div>
   <div class = nav-icons>
   <i class="fa fa-instagram">
