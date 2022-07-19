@@ -1,4 +1,4 @@
-import displaySearchedRecipies from "./src/pages/displaySearchedRecipies.js";
+import displaySearchedRecipes from "./src/pages/displaySearchedRecipes.js";
 import surpriseWithRecipe from "./src/pages/surpriseMeRecipe.js";
 import topFiveRecipe from "./src/pages/topFiveRecipe.js";
 import {
@@ -12,7 +12,7 @@ const main = () => {
   const navBar = createElementById("nav", "nav-bar");
   const container = createElementById("div", "container");
   const surpriseRecipe = createElementById("a", "surprise-meal");
-  const recipieContainer = document.getElementById("recipie-Container");
+  const recipesContainer = document.getElementById("recipie-Container");
   const wrapperContainer = createElementById("div", "search-items");
   const form = createElementById("form");
   const inputField = createElementByClassName("input", "style-input");
@@ -48,7 +48,7 @@ const main = () => {
   searchButton.addEventListener("click", (e) => {
     e.preventDefault();
     if (inputField.value !== "") {
-      displaySearchedRecipies(inputField, container, recipieContainer);
+      displaySearchedRecipes(inputField, container, recipesContainer);
     }
   });
   surpriseRecipe.addEventListener("click", () => surpriseWithRecipe());

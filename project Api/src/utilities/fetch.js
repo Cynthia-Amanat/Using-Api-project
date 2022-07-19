@@ -3,8 +3,9 @@ const fetchData = async (url) => {
   if (response.ok) {
     const data = await response.json();
     return data;
+  } else {
+    throw new Error("HTTP ERROR");
   }
-  throw new Error("HTTP error");
 };
 
 export default fetchData;

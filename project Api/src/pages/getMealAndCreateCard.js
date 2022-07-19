@@ -1,19 +1,18 @@
-import createRecipieCard from "./createRecipieCard.js";
+import createRecipeCard from "./createRecipeCard.js";
 import fetchData from "../utilities/fetch.js";
-import renderError from "../../renderError.js";
 
-const getMealAndCreateCard = async (value, recipieContainer) => {
+const getMealAndCreateCard = async (value, recipesContainer) => {
   try {
     const response = await fetchData(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${value}`
     );
     if (response.meals) {
-      createRecipieCard(response.meals);
+      createRecipeCard(response.meals);
     } else {
-      recipieContainer.innerHTML = `<h4>" Sorry we didn't found any meal !"<h4>`;
+      recipesContainer.innerHTML = `<h4>" Sorry we didn't found any meal !"<h4>`;
     }
-  } catch (error) {
-    renderError(error.message);
+  } catch (err) {
+    recipesContainer.innerHTML = `<h4>${err}<h4>`;
   }
 };
 

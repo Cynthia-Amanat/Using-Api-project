@@ -1,14 +1,14 @@
 import getMealRecipe from "./getMealRecipe.js";
 
-const createRecipieCard = (meals) => {
-  const recipieContainer = document.getElementById("recipie-Container");
+const createRecipeCard = (meals) => {
+  const recipesContainer = document.getElementById("recipie-Container");
   meals.forEach((meal) => {
     // Create Elements
     const recipieCardContainer = document.createElement("div");
     const recipieCard = document.createElement("div");
-    recipieContainer.classList.remove("hide");
+    recipesContainer.classList.remove("hide");
 
-    recipieCard.classList.add("recipie-card");
+    recipieCard.classList.add("recipe-card");
 
     recipieCard.innerHTML = `<img class="card-img" src="${meal.strMealThumb}" />
     <h3 class="card-heading"> <span>Recipe</span><br>  ${meal.strMeal}</h3>
@@ -16,9 +16,9 @@ const createRecipieCard = (meals) => {
 
     // append elemet
     recipieCardContainer.appendChild(recipieCard);
-    recipieContainer.appendChild(recipieCardContainer);
+    recipesContainer.appendChild(recipieCardContainer);
     recipieCard.addEventListener("click", (e) => getMealRecipe(e));
   });
 };
 
-export default createRecipieCard;
+export default createRecipeCard;

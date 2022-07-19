@@ -1,5 +1,5 @@
 function mealInstructions(meal) {
-  const recipieContainer = document.getElementById("recipie-Container");
+  const recipesContainer = document.getElementById("recipie-Container");
   const mealDetail = document.createElement("div");
   mealDetail.id = "meal-details";
 
@@ -27,7 +27,7 @@ function mealInstructions(meal) {
       </div>
     `;
 
-  recipieContainer.appendChild(mealDetail);
+  recipesContainer.appendChild(mealDetail);
   const closeBtn = document.getElementById("close-btn");
   closeBtn.addEventListener("click", () => {
     mealDetail.classList.add("hide");
