@@ -23,7 +23,7 @@ async function topFiveRecipe() {
     topFiveRecipeImage.src = response.meals[0].strMealThumb;
     topFiveRecipeTitle.textContent = response.meals[0].strMeal;
 
-    // appendChild
+    // appendChild elements
     topFiveRecipesCard.appendChild(topFiveRecipeImage);
     topFiveRecipesCard.appendChild(topFiveRecipeTitle);
     topFiveRecipeContainer.appendChild(topFiveRecipesCard);
