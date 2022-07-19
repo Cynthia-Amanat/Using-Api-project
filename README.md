@@ -1,4 +1,4 @@
-# Food website using APIs -  <a href="https://cynthia-amanat.github.io/Using-Api-project/">Demo</a>
+# Food website using APIs -  <a href="https://cynthia-amanat.github.io/Using-Api-project/project%20Api/">Demo</a>
 ![image](https://user-images.githubusercontent.com/103147992/179851455-1238b71d-d135-4e72-a8d4-24b6d7876c70.png)
 
 ## Must Have
