@@ -1,5 +1,5 @@
 import displaySearchedRecipies from "./src/pages/displaySearchedRecipies.js";
-import superiseWithRecipe from "./src/pages/superiseMeRecipe.js";
+import surpriseWithRecipe from "./src/pages/surpriseRecipe.js";
 import topFiveRecipe from "./src/pages/topFiveRecipe.js";
 import {
   createElementById,
@@ -11,7 +11,7 @@ const main = () => {
   const main = document.getElementById("main");
   const navBar = createElementById("nav", "nav-bar");
   const container = createElementById("div", "container");
-  const superiseRecipe = createElementById("a", "superise-meal");
+  const surpriseRecipe = createElementById("a", "surprise-meal");
   const recipieContainer = document.getElementById("recipie-Container");
   const wrapperContainer = createElementById("div", "search-items");
   const form = createElementById("form");
@@ -32,7 +32,7 @@ const main = () => {
   inputField.placeholder = "Search for recipe ....";
   inputField.type = "text";
   searchButton.innerHTML = `<i class="fa fa-search"></i>`;
-  superiseRecipe.innerHTML = `SUPERISE RECIPIE  <i class="fa fa-chevron-circle-right"></i>`;
+  surpriseRecipe.innerHTML = ` SURPRISE RECIPIE  <i class="fa fa-chevron-circle-right"></i>`;
 
   // appending elements
   main.appendChild(navBar);
@@ -51,7 +51,7 @@ const main = () => {
       displaySearchedRecipies(inputField, container, recipieContainer);
     }
   });
-  superiseRecipe.addEventListener("click", () => superiseWithRecipe());
+  surpriseRecipe.addEventListener("click", () => surpriseWithRecipe());
 };
 
 window.addEventListener("load", main);

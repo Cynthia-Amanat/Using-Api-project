@@ -1,18 +1,15 @@
 import fetchData from "../utilities/fetch.js";
 import mealInstuctions from "./mealInstructions.js";
 import {
-  createElementById,
-  createElementByClassName,
+  createElementById,,
 } from "../utilities/elementFactory.js";
 async function topFiveRecipe() {
   const main = document.getElementById("main");
   const topFiveRecipeContainer = createElementById("div", "top-five");
-  //   topFiveRecipeContainer.classList.add("hide");
   const title = createElementById("h1", "top-recipies-title");
   title.textContent = " Top Five Recipies ";
   main.appendChild(title);
-
-  for (let i = 0; i < 5; i++) {
+try{for (let i = 0; i < 5; i++) {
     let response = await fetchData(
       "https://www.themealdb.com/api/json/v1/1/random.php"
     );
@@ -32,6 +29,11 @@ async function topFiveRecipe() {
     topFiveRecipeContainer.appendChild(topFiveRecipeCard);
   }
   main.appendChild(topFiveRecipeContainer);
+}
+  catch(error){
+    console.log(error.message)
+  }
+  
 }
 
 export default topFiveRecipe;

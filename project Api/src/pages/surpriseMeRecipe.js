@@ -1,7 +1,7 @@
-import fetchData from "../utilities/fetch.js";
-import mealInstructions from "./mealInstructions.js";
+import fetchData from "./src/utilities/fetch.js";
+import mealInstructions from "./src/pages/mealInstructions.js";
 
-async function superiseWithRecipe() {
+async function surpriseWithRecipe() {
   try {
     const response = await fetchData(
       "https://www.themealdb.com/api/json/v1/1/random.php"
@@ -11,4 +11,4 @@ async function superiseWithRecipe() {
     console.log(error.message);
   }
 }
-export default superiseWithRecipe;
+export default surpriseWithRecipe;

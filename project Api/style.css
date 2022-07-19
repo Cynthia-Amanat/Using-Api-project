@@ -111,14 +111,14 @@ button:hover{
     display: none;
 }
 
-#superise-meal{
+#surprise-meal{
 position: absolute;
 left: 38%;
 font-size: 35px;
 font-weight:bolder;
 margin: 10px;
 }
-#superise-meal:hover{
+#surprise-meal:hover{
  text-decoration: underline;
  color: #f1f1f1;
 }
@@ -431,7 +431,7 @@ opacity: 0.1;
  #container h1 {
     font-size: 40px;
 }
-#superise-meal {
+#surprise-meal {
     
     font-size: 20px;
     left: 30%;
